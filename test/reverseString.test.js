@@ -11,6 +11,16 @@ test('Test string', () => {
   expect(reverseString('racecar')).toBe('racecar')
 })
 
+test('Test string with no letters inside', () => {
+  expect(reverseString('')).toBe(
+    'Please enter preferrably more than one letter'
+  )
+})
+
+test('Test string with one letter', () => {
+  expect(reverseString('a')).toBe('a')
+})
+
 test('Test number', () => {
   expect(reverseString(123)).toBe('Please enter a string')
 })

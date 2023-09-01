@@ -12,6 +12,14 @@ test('Test string', () => {
   expect(capitalize('racecar')).toBe('Racecar')
 })
 
+test('Test string with no letters inside', () => {
+  expect(capitalize('')).toBe('Please enter preferrably more than one letter')
+})
+
+test('Test string with one letter', () => {
+  expect(capitalize('a')).toBe('A')
+})
+
 test('Test number', () => {
   expect(capitalize(123)).toBe('Please enter a string')
 })
